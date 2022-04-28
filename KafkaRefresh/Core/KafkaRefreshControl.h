@@ -176,6 +176,8 @@ NS_CLASS_AVAILABLE_IOS(7_0) @interface KafkaRefreshControl: UIView <KafkaRefresh
  */
 - (void)endRefreshingAndNoLongerRefreshingWithAlertText:(NSString *)text Kafka_REQUIRES_SUPER;
 
+- (void)endRefreshingBgColor:(UIColor *)color Kafka_REQUIRES_SUPER;
+
 /**
  After you call ‘endRefreshingAndNoLongerRefreshingWithAlertText’,
  you need to resume refresh available
