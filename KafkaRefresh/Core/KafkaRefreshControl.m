@@ -299,6 +299,10 @@ static CGFloat const kStretchOffsetYAxisThreshold = 1.0;
 	}
 }
 
+- (void)endRefreshingBgColor:(UIColor *)color{
+    self.alertLabel.backgroundColor = color;
+}
+
 - (void)resumeRefreshAvailable{
 	self.shouldNoLongerRefresh = NO;
 	self.alertLabel.alpha = 0.0;
